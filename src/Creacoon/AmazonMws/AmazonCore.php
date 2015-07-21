@@ -366,23 +366,6 @@ abstract class AmazonCore{
         }
     }
 
-   /**
-    * Set the log file path.
-    *
-    * Use this method to change the log file used. This method is called
-    * each time the config file is changed.
-    * @param string $path <p>The path to the log file.</p>
-    * @throws Exception If the file cannot be found or read.
-    */
-   public function setLogPath($path){
-       if (file_exists($path) && is_readable($path)){
-           $this->logpath = $path;
-       } else {
-           throw new Exception("Log file does not exist or cannot be read! ($path)");
-       }
-
-   }
-
     /**
      * Sets the store values.
      *
