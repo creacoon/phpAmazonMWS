@@ -7,6 +7,25 @@ Currently optimizing for Laravel Framework.
 
 This is __NOT__ for Amazon Web Services (AWS) - Cloud Computing Services.
 
+## Installation
+
+This package only works with __Laravel 4__
+
+Install using
+
+```bash
+composer require creacoon/amazon-mws-laravel
+```
+
+then update your `app/config/app.php`by adding the following Service Provider
+
+```php
+	'providers' => array(
+		...
+		'Creacoon\AmazonMws\AmazonMwsServiceProvider',
+        ...
+	),
+```
 
 ## Example Usage
 Here are a couple of examples of the library in use.
