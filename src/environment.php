@@ -15,27 +15,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /**
  * These variables pertain to the inner workings of the Amazon API.
  * The values come from Amazon and should not be modified.
  * Otherwise, the library may not be able to connect to Amazon.
  */
-
 //for User-Agent header(?)
 $AMAZON_APPLICATION = 'LaravelAmazonMWS';
-$AMAZON_APPVERSION = '1.0';
-
+$AMAZON_APPVERSION = '2.0';
 //Version numbers for cores
-$AMAZON_VERSION_FEEDS       = '2009-01-01';
-$AMAZON_VERSION_INBOUND     = '2010-10-01';
-$AMAZON_VERSION_INVENTORY   = '2010-10-01';
-$AMAZON_VERSION_ORDERS      = '2013-09-01';
-$AMAZON_VERSION_OUTBOUND    = '2010-10-01';
-$AMAZON_VERSION_PRODUCTS    = '2011-10-01';
-$AMAZON_VERSION_REPORTS     = '2009-01-01';
-$AMAZON_VERSION_SELLERS     = '2011-07-01';
-$AMAZON_VERSION_FINANCE     = '2015-05-01';
+$AMAZON_VERSION_FEEDS = '2009-01-01';
+$AMAZON_VERSION_INBOUND = '2010-10-01';
+$AMAZON_VERSION_INVENTORY = '2010-10-01';
+$AMAZON_VERSION_ORDERS = '2013-09-01';
+$AMAZON_VERSION_OUTBOUND = '2010-10-01';
+$AMAZON_VERSION_PRODUCTS = '2011-10-01';
+$AMAZON_VERSION_REPORTS = '2009-01-01';
+$AMAZON_VERSION_SELLERS = '2011-07-01';
+$AMAZON_VERSION_SUBSCRIBE = '2013-07-01';
+
+$AMAZON_VERSION_FINANCE = '2015-05-01';
 //Recommendations
 $THROTTLE_LIMIT_FINANCE = 30;
 $THROTTLE_TIME_FINANCE = 2;
@@ -92,5 +91,8 @@ $THROTTLE_TIME_FEEDLIST = 45;
 //Getting a Feed
 $THROTTLE_LIMIT_FEEDRESULT = 15;
 $THROTTLE_TIME_FEEDRESULT = 60;
+//Subscriptions
+$THROTTLE_LIMIT_SUBSCRIBE = 25;
+$THROTTLE_TIME_SUBSCRIBE = 120;
 
 ?>
